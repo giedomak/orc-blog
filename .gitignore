@@ -1,6 +1,8 @@
 node_modules
 lib-cov
 npm-debug.log
-coverage.html
+coverage-server.html
+coverage-client.html
 .DS_Store
 .env
+client.lcov
