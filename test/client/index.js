@@ -1,5 +1,3 @@
 describe('client', function () {
-  it('should run tests', function () {
-    // yay!
-  });
+  it('should run tests', function () { });
 });
