@@ -22,8 +22,8 @@ app.use(cookieParser());
 app.use(expressValidator);
 app.use(express.static(path.join(__dirname, 'public')));
 
-// app.use('/api', api);
-// app.use('/', client);
+app.use('/api', api);
+app.use('/', client);
 
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
