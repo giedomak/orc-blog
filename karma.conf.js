@@ -40,7 +40,8 @@ module.exports = function(config) {
     // optionally, configure the reporter
     coverageReporter: {
         reporters:[
-            { type: 'lcov', dir: 'client-coverage/' }
+            { type: 'html', dir: 'client-coverage/' },
+            { type: 'lcovonly', dir: '.', subdir: '.', file: 'client.lcov' }
         ]
     },
 
