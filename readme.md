@@ -3,6 +3,7 @@
 A multi-user blog built with [Orchestrate](http://orchestrate.io/), [UserApp](https://www.userapp.io/), [Node.js](http://nodejs.org/), and [Angular.js](https://angularjs.org/).
 
 [![Build Status](https://travis-ci.org/orchestrate-io/orc-blog.svg?branch=master)](https://travis-ci.org/orchestrate-io/orc-blog)
+[![Coverage Status](https://coveralls.io/repos/orchestrate-io/orc-blog/badge.png)](https://coveralls.io/r/orchestrate-io/orc-blog)
 
 ## Install
 
