@@ -1,0 +1,6 @@
+node_modules
+lib-cov
+npm-debug.log
+coverage.html
+.DS_Store
+.env
