@@ -7,3 +7,6 @@ coverage-client.html
 .DS_Store
 .env
 client.lcov
+coverage
+client-coverage
+karma_html
