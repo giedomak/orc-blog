@@ -4,6 +4,7 @@
   "description": "A multi-user blog built with Orchestrate, UserApp, Node.js, and Angular.js",
   "main": "index.js",
   "scripts": {
+    "start": "node ./bin/www",
     "test": "./node_modules/.bin/jshint bin server client test index.js && npm run test-server && npm run test-client",
     "test-server": "./node_modules/.bin/jscoverage server server-cov && ./node_modules/.bin/mocha test/server -R spec",
     "test-client": "./node_modules/.bin/jscoverage client client-cov && ./node_modules/.bin/browserify client-cov/index.js test/client/app.js && ./node_modules/.bin/karma start karma.conf.js",
@@ -26,7 +27,9 @@
     "jshint": "^2.5.3",
     "karma": "^0.12.21",
     "karma-chrome-launcher": "^0.1.4",
+    "karma-coverage": "^0.2.6",
     "karma-firefox-launcher": "^0.1.3",
+    "karma-html-reporter": "^0.2.3",
     "karma-mocha": "^0.1.7",
     "karma-phantomjs-launcher": "^0.1.4",
     "karma-requirejs": "^0.2.2",
