@@ -4,8 +4,10 @@
   "description": "A multi-user blog built with Orchestrate, UserApp, Node.js, and Angular.js",
   "main": "index.js",
   "scripts": {
-    "start": "node ./bin/www",
-    "test": "./node_modules/.bin/jshint bin server client index.js && npm run test-server && npm run test-client",
+    "start": "npm run jshint && npm run browserify && node ./bin/www",
+    "test": "npm run jshint && npm run test-server && npm run test-client",
+    "jshint": "./node_modules/.bin/jshint bin server client index.js",
+    "browserify": "./node_modules/.bin/browserify client/index.js > public/js/app.js",
     "test-server": "./node_modules/.bin/jscoverage server server-cov && ./node_modules/.bin/mocha test/server -R spec",
     "test-client": "./node_modules/.bin/karma start karma.conf.js",
     "coveralls": "npm run coveralls-server && npm run test-client",

@@ -10,3 +10,4 @@ client.lcov
 coverage
 client-coverage
 karma_html
+public/js/app.js
